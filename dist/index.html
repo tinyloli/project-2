@@ -3,200 +3,152 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Who's Calling?</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto+Condensed" rel="stylesheet">
-
 </head>
 <body>
-
-<!-- h e a d e r -->
-
-<div id="header">
-		<div class="d-flex justify-content-center">
-		<img src="images/logo.png" alt="Who's Calling? logo" >
+	<!-- h e a d e r -->
+	<div id="header">
+		<div class="d-flex justify-content-center"><img alt="Who's Calling? logo" src="images/logo.png"></div>
+		<nav class="navbar navbar-toggleable-md navbar-light justify-content-center">
+			<!-- j u m b o t r o n -->
+			<div class="jumbotron jumbotron-fluid" style="background-image: url(images/main.png)">
+				<div class="container">
+					<p class="lead">Have you ever sent a letter to your senator? What about your state legislators or even the mayor of your town? Their contact information is scattered throughout the web on various official and unofficial websites. With this website, it should make it easy to quickly find the person you wish to contact.</p>
+					<form class="form-inline">
+						<div class="form-group">
+							<label class="sr-only">zip code</label>
+							<p class="form-control-static">Enter your zipcode:</p>
+						</div>
+						<div class="form-group mx-sm-3">
+							<label class="sr-only" for="inputPassword2"></label> <input class="form-control" id="inputPassword2" placeholder="91324" type="password">
+						</div><button class="btn btn-primary" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+	</div><!-- n a v b a r -->
+	<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+		<li class="nav-item">
+			<a aria-controls="local" class="nav-link active" data-toggle="tab" href="#local" role="tab">LOCAL</a>
+		</li>
+		<li class="nav-item">
+			<a aria-controls="state" class="nav-link" data-toggle="tab" href="#state" role="tab">STATE</a>
+		</li>
+		<li class="nav-item">
+			<a aria-controls="federal" class="nav-link" data-toggle="tab" href="#federal" role="tab">FEDERAL</a>
+		</li>
+	</ul><!-- t a b s -->
+	<div class="tab-content">
+		<!-- l o c a l -->
+		<div class="tab-pane active" id="local" role="tabpanel">
+			<div class="card-deck">
+				<div class="card col-sm-12 col-md-4 col-lg-3">
+					<img alt="image of Mitchell Englander" class="card-img-top" src="images/englander.jpg">
+					<div class="card-block">
+						<h4 class="card-title"><a href="http://www.cd12.org/">MITCHELL ENGLANDER</a></h4>
+						<p class="card-text">Mitchell Englander is a member of the Los Angeles City Council, representing District 12 in the San Fernando Valley. He is the only member of the city council who is registered as Republican.<br>
+						<br>
+						<strong>City Hall Office:</strong> 200 N. Spring St., Room 405 | Los Angeles, CA 90012 | Phone: (213) 473-7012 - Fax: (213) 473-6925<br>
+						<strong>Community Service Center:</strong> 9207 Oakdale Ave., Suite 200 | Chatsworth, CA 91311 | Phone: (818) 882-1212 - Fax: (818) 701-5254</p>
+					</div>
+					<div class="card-footer" style="text-align: right">
+						<small class="text-muted"><a href="Councilmember.Englander@lacity.org"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/MitchellEnglander/"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/Mitch_Englander"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+					</div>
+				</div>
+				<div class="card col-sm-12 col-md-4 col-lg-3">
+					<img alt="image of Eric Garcetti" class="card-img-top" src="images/garcetti.jpg">
+					<div class="card-block">
+						<h4 class="card-title"><a href="https://www.ericgarcetti.com/">ERIC GARCETTI</a></h4>
+						<p class="card-text">Eric Michael Garcetti (born February 4, 1971) is the current mayor of Los Angeles. A member of the Democratic Party, he was first elected mayor in 2013, and won reelection in the 2017 election.<br>
+						<br>
+						<strong>Mailing Address:</strong> 777 S. Figueroa St., Ste. 4050 Los Angeles CA 90017</p>
+					</div>
+					<div class="card-footer" style="text-align: right">
+						<small class="text-muted"><a href="mayor.garcetti@lacity.org"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/garcetti"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/mayorofla"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+					</div>
+				</div>
+			</div>
+		</div><!-- s t a t e -->
+		<div class="tab-pane" id="state" role="tabpanel">
+			<div class="card-deck">
+				<div class="card col-sm-12 col-md-4 col-lg-3">
+					<img alt="image of Jerry Brown" class="card-img-top" src="images/brown.gif">
+					<div class="card-block">
+						<h4 class="card-title"><a href="http://www.jerrybrown.org/">JERRY BROWN</a></h4>
+						<p class="card-text">Edmund Gerald "Jerry" Brown Jr. is an American politician and lawyer who has served as the 39th Governor of California since 2011. A member of the Democratic Party, Brown previously served as the 34th governor from 1975 to 1983, and is the longest-serving governor in California history.<br>
+						<br>
+						<strong>Mailing Address:</strong> c/o State Capitol, Suite 1173 Sacramento, CA 95814 | Phone: (916) 445-2841 | Fax: (916) 558-3160<br></p>
+					</div>
+					<div class="card-footer" style="text-align: right">
+						<small class="text-muted"><a href="https://govnews.gov.ca.gov/gov39mail/mail.php"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/jerrybrown/"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/JerryBrownGov"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+					</div>
+				</div>
+				<div class="card col-sm-12 col-md-4 col-lg-3">
+					<img alt="image of Dianne Feinstein" class="card-img-top" src="images/feinstein.jpg">
+					<div class="card-block">
+						<h4 class="card-title"><a href="https://www.feinstein.senate.gov/public/index.cfm/">DIANNE FEINSTEIN</a></h4>
+						<p class="card-text">Dianne Goldman Berman Feinstein is the senior United States Senator from California. A member of the Democratic Party, she has served in the Senate since 1992.<br>
+						<br>
+						<strong>Washington D.C. Office:</strong> 331 Hart Senate Office Building Washington, D.C. 20510 | Phone: (202) 224-3841 | Fax: (202) 228-3954 | TTY/TDD: (202) 224-2501</p>
+					</div>
+					<div class="card-footer" style="text-align: right">
+						<small class="text-muted"><a href="https://www.feinstein.senate.gov/public/index.cfm/e-mail-me"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/SenatorFeinstein/"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/senfeinstein"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+					</div>
+				</div>
+				<div class="card col-sm-12 col-md-4 col-lg-3">
+					<img alt="image of Kamala Harris" class="card-img-top" src="images/harris.jpeg">
+					<div class="card-block">
+						<h4 class="card-title"><a href="http://splash.kamalaharris.org/">KAMALA HARRIS</a></h4>
+						<p class="card-text">Kamala Devi Harris is an American attorney and politician who is the junior United States Senator from California. She is a member of the Democratic Party and served as the 32nd Attorney General of California.<br>
+						<br>
+						<strong>Capital Office Washington D.C.:</strong> 112 Hart Senate Office Building Washington, DC 20510 | Phone (202) 224-3553 | Fax (202) 224-2200<br>
+						<strong>Capital Office Sacramento:</strong> 501 I Street Suite 7-600 Sacramento, CA 95814 | Phone (916) 448 - 2787 | Fax (202) 228 - 3865<br>
+						<strong>State Office Fresno:</strong> 2500 Tulare Street Suite 5290 Fresno, CA 93721 | Phone (559) 497 - 5109 | Fax (202) 228 - 3864<br>
+						<strong>State Office Los Angeles:</strong> 312 N. Spring St. Suite 1748 Los Angeles, CA 90012 | Phone (213) 894 - 5000 | Fax (202) 224 - 0357<br>
+						<strong>State Office San Francisco:</strong> 50 United Nations Plaza Suite 5584 San Francisco, CA 94102 | Phone (415) 355 - 9041 | Fax (202) 224 - 0454<br>
+						<strong>State Office San Diego:</strong> 600 B Street Suite 2240 San Diego, CA 92101 | Phone (619) 239 - 3884 | Fax (202) 228 - 3863</p>
+					</div>
+					<div class="card-footer" style="text-align: right">
+						<small class="text-muted"><a href="https://www.harris.senate.gov/content/contact-senator"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.facebook.com/KamalaHarris"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://twitter.com/KamalaHarris"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+					</div>
+					</div>
+				</div>
+			</div><!-- f e d e r a l -->
+			<div class="tab-pane" id="federal" role="tabpanel">
+				<div class="card-deck">
+					<div class="card col-sm-12 col-md-4 col-lg-3">
+						<img alt="image of Donald Trump" class="card-img-top" src="images/trump.jpg">
+						<div class="card-block">
+							<h4 class="card-title"><a href="http://www.trump.com/">DONALD TRUMP</a></h4>
+							<p class="card-text">Donald John Trump is an American businessman, television personality, politician, and the 45th President of the United States. His political positions have been described by scholars and commentators as populist, protectionist, and nationalist.<br>
+							<br></p>
+						</div>
+						<div class="card-footer" style="text-align: right">
+							<small class="text-muted"><a href="https://www.donaldjtrump.com/contact"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/DonaldTrump/"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/realDonaldTrump"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+						</div>
+					</div>
+					<div class="card col-sm-12 col-md-4 col-lg-3">
+						<img alt="image of Mike Pence" class="card-img-top" src="images/pence.jpg">
+						<div class="card-block">
+							<h4 class="card-title"><a href="www.mikepence.com">MIKE PENCE</a></h4>
+							<p class="card-text">Michael Richard "Mike" Pence is an American politician, lawyer, and the 48th Vice President of the United States. Pence positioned himself as a principled ideologue and supporter of the Tea Party movement, noting he was "a Christian, a conservative, and a Republican, in that order."<br>
+							<br></p>
+						</div>
+						<div class="card-footer" style="text-align: right">
+							<small class="text-muted"><a href="in.gov/gov/2333.htm"><img alt="e-mail logo" src="images/mail.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://www.facebook.com/mikepence/"><img alt="Facebook logo" src="images/fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://twitter.com/mike_pence?lang=en"><img alt="Twitter logo" src="images/twitter.png"></a></small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
+			</script> 
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+			</script> 
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+			         $('#myTab li:eq(3) a').tab('show') // Select third tab (0-indexed)
+			</script>
 		</div>
-			<nav class="navbar navbar-toggleable-md navbar-light justify-content-center">
-
-	<!-- j u m b o t r o n -->
-
-	<div class="jumbotron jumbotron-fluid" style="background-image: url(images/main.png)">
-	  <div class="container">
-	    <p class="lead">Have you ever sent a letter to your senator? What about your state legislators or even the mayor of your town? Their contact information is scattered throughout the web on various official and unofficial websites. With this website, it should make it easy to quickly find the person you wish to contact.</p>
-	    	  	<form class="form-inline">
-		  <div class="form-group">
-		    <label class="sr-only">zip code</label>
-		    <p class="form-control-static">Enter your zipcode:</p>
-		  </div>
-		  <div class="form-group mx-sm-3">
-		    <label for="inputPassword2" class="sr-only"></label>
-		    <input type="password" class="form-control" id="inputPassword2" placeholder="91324">
-		  </div>
-		  <button type="submit" class="btn btn-primary">Search</button>
-		</form>
-	  </div>
 	</div>
-</div>
-
-<!-- n a v b a r -->
-
-<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#local" role="tab" aria-controls="local">LOCAL</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#state" role="tab" aria-controls="state">STATE</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#federal" role="tab" aria-controls="federal">FEDERAL</a>
-  </li>
-</ul>
-
-<!-- t a b s -->
-
-<div class="tab-content">
-
-<!-- l o c a l -->
-
-  <div class="tab-pane active" id="local" role="tabpanel">
-	<div class="card-deck">
-	  <div class="card col-sm-12 col-md-4 col-lg-3">
-	    <img class="card-img-top" src="images/englander.jpg" alt="image of Mitchell Englander">
-	    <div class="card-block">
-	      <h4 class="card-title"><a href="http://www.cd12.org/">MITCHELL ENGLANDER</a></h4>
-	      <p class="card-text">Mitchell Englander is a member of the Los Angeles City Council, representing District 12 in the San Fernando Valley. He is the only member of the city council who is registered as Republican.
-	      <br><br>
-	      <strong>City Hall Office:</strong> 200 N. Spring St., Room 405 | Los Angeles, CA 90012 | Phone: (213) 473-7012 - Fax: (213) 473-6925
-	      <br>
-	      <strong>Community Service Center:</strong> 9207 Oakdale Ave., Suite 200 | Chatsworth, CA 91311 | Phone: (818) 882-1212 - Fax: (818) 701-5254 </p>
-	    </div>
-	    <div class="card-footer" style="text-align: right">
-	      <small class="text-muted">
-	      	<a href="Councilmember.Englander@lacity.org"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://www.facebook.com/MitchellEnglander/"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="http://twitter.com/Mitch_Englander"><img src="images/twitter.png" alt="Twitter logo"></a></small>
-	    </div>
-	  </div>
-
-	  <div class="card col-sm-12 col-md-4 col-lg-3">
-	    <img class="card-img-top" src="images/garcetti.jpg" alt="image of Eric Garcetti">
-	    <div class="card-block">
-	      <h4 class="card-title"><a href="https://www.ericgarcetti.com/">ERIC GARCETTI</a></h4>
-	      <p class="card-text">Eric Michael Garcetti (born February 4, 1971) is the current mayor of Los Angeles. A member of the Democratic Party, he was first elected mayor in 2013, and won reelection in the 2017 election.
-	      <br><br>
-	      <strong>Mailing Address:</strong> 777 S. Figueroa St., Ste. 4050
-	Los Angeles CA 90017</p>
-	    </div>
-	    <div class="card-footer" style="text-align: right">
-	      <small class="text-muted">
-	      	<a href="mayor.garcetti@lacity.org"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://www.facebook.com/garcetti"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://twitter.com/mayorofla"><img src="images/twitter.png" alt="Twitter logo"></a></small>
-	    </div>
-	  </div>
-	</div>
-</div>
-<!-- s t a t e -->
-
-
-  <div class="tab-pane" id="state" role="tabpanel">
-  	<div class="card-deck">
-	  <div class="card col-sm-12 col-md-4 col-lg-3">
-	    <img class="card-img-top" src="images/brown.gif" alt="image of Jerry Brown">
-	    <div class="card-block">
-	      <h4 class="card-title"><a href="http://www.jerrybrown.org/">JERRY BROWN</a></h4>
-	      <p class="card-text">Edmund Gerald "Jerry" Brown Jr. is an American politician and lawyer who has served as the 39th Governor of California since 2011. A member of the Democratic Party, Brown previously served as the 34th governor from 1975 to 1983, and is the longest-serving governor in California history.
-	      <br><br>
-	      <strong>Mailing Address:</strong> c/o State Capitol, Suite 1173 Sacramento, CA 95814 | Phone: (916) 445-2841 | Fax: (916) 558-3160
-	      <br>
-	    </div>
-	    <div class="card-footer" style="text-align: right">
-	      <small class="text-muted">
-	      	<a href="https://govnews.gov.ca.gov/gov39mail/mail.php"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://www.facebook.com/jerrybrown/"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://twitter.com/JerryBrownGov"><img src="images/twitter.png" alt="Twitter logo"></a></small>
-	    </div>
-	  </div>
-
-	  <div class="card col-sm-12 col-md-4 col-lg-3">
-	    <img class="card-img-top" src="images/feinstein.jpg" alt="image of Dianne Feinstein">
-	    <div class="card-block">
-	      <h4 class="card-title"><a href="https://www.feinstein.senate.gov/public/index.cfm/">DIANNE FEINSTEIN</a></h4>
-	      <p class="card-text">Dianne Goldman Berman Feinstein is the senior United States Senator from California. A member of the Democratic Party, she has served in the Senate since 1992.
-	      <br><br>
-	      <strong>Washington D.C. Office:</strong> 331 Hart Senate Office Building Washington, D.C. 20510 | Phone: (202) 224-3841 | Fax: (202) 228-3954 | TTY/TDD: (202) 224-2501</p>
-	    </div>
-	    <div class="card-footer" style="text-align: right">
-	      <small class="text-muted">
-	      	<a href="https://www.feinstein.senate.gov/public/index.cfm/e-mail-me"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://www.facebook.com/SenatorFeinstein/"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="https://twitter.com/senfeinstein"><img src="images/twitter.png" alt="Twitter logo"></a></small>
-	    </div>
-	  </div>
-
-	  <div class="card col-sm-12 col-md-4 col-lg-3">
-	    <img class="card-img-top" src="images/harris.jpeg" alt="image of Kamala Harris">
-	    <div class="card-block">
-	      <h4 class="card-title"><a href="http://splash.kamalaharris.org/">KAMALA HARRIS</a></h4>
-	      <p class="card-text">Kamala Devi Harris is an American attorney and politician who is the junior United States Senator from California. She is a member of the Democratic Party and served as the 32nd Attorney General of California.
-	      <br><br>
-	      <strong>Capital Office Washington D.C.:</strong> 112 Hart Senate Office Building Washington, DC 20510 | Phone (202) 224-3553 | Fax (202) 224-2200
-	      <br>
-	      <strong>Capital Office Sacramento:</strong> 501 I Street Suite 7-600 Sacramento, CA  95814 | Phone (916) 448 - 2787 | Fax (202) 228 - 3865
-	      <br>
-	      <strong>State Office Fresno:</strong> 2500 Tulare Street Suite 5290 Fresno, CA 93721 | Phone (559) 497 - 5109 | Fax (202) 228 - 3864
-	      <br>
-	      <strong>State Office Los Angeles:</strong> 312 N. Spring St. Suite 1748 Los Angeles, CA  90012 | Phone (213) 894 - 5000 | Fax (202) 224 - 0357
-	      <br>
-	      <strong>State Office San Francisco:</strong> 50 United Nations Plaza Suite 5584 San Francisco, CA  94102 | Phone (415) 355 - 9041 | Fax (202) 224 - 0454
-	      <br>
-	      <strong>State Office San Diego:</strong> 600 B Street Suite 2240 San Diego, CA  92101 | Phone (619) 239 - 3884 | Fax (202) 228 - 3863</p>
-	    </div>
-	    <div class="card-footer" style="text-align: right">
-	      <small class="text-muted">
-	      	<a href="https://www.harris.senate.gov/content/contact-senator"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="http://www.facebook.com/KamalaHarris"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	      	<a href="http://twitter.com/KamalaHarris"><img src="images/twitter.png" alt="Twitter logo"></a></small>
-	    </div>
-	  </div>	  	 
-	</div>
-
-	<!-- f e d e r a l -->
-
-	  <div class="tab-pane" id="federal" role="tabpanel">
-	  	<div class="card-deck">
-		  <div class="card col-sm-12 col-md-4 col-lg-3">
-		    <img class="card-img-top" src="images/trump.jpg" alt="image of Donald Trump">
-		    <div class="card-block">
-		      <h4 class="card-title"><a href="http://www.trump.com/">DONALD TRUMP</a></h4>
-		      <p class="card-text">Donald John Trump is an American businessman, television personality, politician, and the 45th President of the United States. His political positions have been described by scholars and commentators as populist, protectionist, and nationalist.
-		      <br><br>
-		      </p>
-		    </div>
-		    <div class="card-footer" style="text-align: right">
-		      <small class="text-muted">
-		      	<a href="https://www.donaldjtrump.com/contact"><img src="images/mail.png" alt="e-mail logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		      	<a href="https://www.facebook.com/DonaldTrump/"><img src="images/fb.png" alt="Facebook logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		      	<a href="https://twitter.com/realDonaldTrump"><img src="images/twitter.png" alt="Twitter logo"></a>
-		      </small>
-		    </div>
-		  </div>
-	  </div>
-
-</div>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js">
-</script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
-</script> 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
-$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
-</script>
-
-
-
-	
-
-
-
-
 </body>
 </html>
