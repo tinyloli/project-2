@@ -1,4 +1,8 @@
 .jumbotron {
+  background: url('images/main.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 500px;
   padding: $jumbotron-padding ($jumbotron-padding / 2);
   margin-bottom: $jumbotron-padding;
   background-color: $jumbotron-bg;
@@ -9,6 +13,7 @@
   }
 }
 
+
 .jumbotron-hr {
   border-top-color: darken($jumbotron-bg, 10%);
 }
@@ -17,4 +22,9 @@
   padding-right: 0;
   padding-left: 0;
   @include border-radius(0);
+}
+
+.jumbotron p{
+  text-align: center;
+  padding-top: 5%;
 }

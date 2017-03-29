@@ -4,6 +4,19 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+$('#myTab a[href="#home"]').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myTab a[href="#profile"]').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myTab a[href="#messages"]').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
 if (typeof jQuery === 'undefined') {
   throw new Error('Bootstrap\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\'s JavaScript.')
 }

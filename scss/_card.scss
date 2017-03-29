@@ -4,6 +4,11 @@
 
 .card {
   position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
   display: flex;
   flex-direction: column;
   background-color: $card-bg;
@@ -176,6 +181,8 @@
 // Card image caps
 .card-img-top {
   @include border-top-radius($card-border-radius-inner);
+  max-height: 30%;
+  max-width: 100%;
 }
 .card-img-bottom {
   @include border-bottom-radius($card-border-radius-inner);
